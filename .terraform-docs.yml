@@ -26,6 +26,12 @@ content: |-
   {{ include "examples/fleet-server/main.tf" }}
   ```
 
+  ### Elastic Agent managed by Fleet
+
+  ```hcl
+  {{ include "examples/fleet-elastic-agent/main.tf" }}
+  ```
+
   {{ .Requirements }}
 
   {{ .Providers }}
