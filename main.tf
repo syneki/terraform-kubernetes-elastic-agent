@@ -138,9 +138,12 @@ resource "kubernetes_daemonset" "elastic_agent" {
             name = "ELASTICSEARCH_PASSWORD"
           }
 
-          env {
-            name  = "ELASTICSEARCH_CA"
-            value = "/certs/elasticsearch/ca.crt"
+          dynamic "env" {
+            for_each = var.elasticsearch_ca != null ? [1] : []
+            content {
+              name  = "ELASTICSEARCH_CA"
+              value = "/certs/elasticsearch/ca.crt"
+            }
           }
 
           env {
@@ -163,9 +166,12 @@ resource "kubernetes_daemonset" "elastic_agent" {
             }
           }
 
-          env {
-            name  = "KIBANA_CA"
-            value = "/certs/kibana/ca.crt"
+          dynamic "env" {
+            for_each = var.kibana_ca != null ? [1] : []
+            content {
+              name  = "KIBANA_CA"
+              value = "/certs/kibana/ca.crt"
+            }
           }
 
           env {
