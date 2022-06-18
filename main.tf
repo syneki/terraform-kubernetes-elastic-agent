@@ -1,5 +1,5 @@
 module "rbac" {
-  source = "../terraform-k8s-rbac"
+  source = "syneki/rbac/kubernetes"
 
   name      = var.name
   namespace = var.namespace

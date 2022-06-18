@@ -22,6 +22,21 @@ module "fleet_server" {
 }
 ```
 
+### Elastic Agent managed by Fleet
+
+```hcl
+module "fleet_elastic_agent" {
+  source = "../.."
+
+  name      = "fleet-server"
+  namespace = "monitoring"
+
+  fleet_enroll           = true
+  fleet_url              = "https://fleet.syneki.com"
+  fleet_enrollment_token = "myenrollmenttoken"
+}
+```
+
 ## Requirements
 
 | Name | Version |
@@ -39,7 +54,7 @@ module "fleet_server" {
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_rbac"></a> [rbac](#module\_rbac) | ../terraform-k8s-rbac | n/a |
+| <a name="module_rbac"></a> [rbac](#module\_rbac) | syneki/rbac/kubernetes | n/a |
 
 ## Resources
 
