@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+### [1.0.1](https://github.com/syneki/terraform-kubernetes-elastic-agent/compare/v1.0.0...v1.0.1) (2022-06-18)
+
+
+### Bug Fixes
+
+* Only mount CA when variables are set ([7048991](https://github.com/syneki/terraform-kubernetes-elastic-agent/commit/704899138290651bb468fc315589ce43701ef565))
+
 ## 1.0.0 (2022-06-18)
 
 
