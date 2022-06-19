@@ -14,6 +14,17 @@ sections:
   show: []
 
 content: |-
+
+  <p align="center">
+    <img alt="GitHub release (latest SemVer)" src="https://img.shields.io/github/v/release/syneki/terraform-kubernetes-elastic-agent">
+    <img alt="GitHub contributors" src="https://img.shields.io/github/contributors/syneki/terraform-kubernetes-elastic-agent">
+    <img alt="GitHub issues" src="https://img.shields.io/github/issues/syneki/terraform-kubernetes-elastic-agent">
+  </p>
+  <p align="center">
+    <img alt="GitHub followers" src="https://img.shields.io/github/followers/syneki?style=social">
+  </p>
+
+
   # Terraform Kubernetes Elastic Agent
 
   Terraform module which create Elastic Agent, this module is perfect if you want to run a Fleet server or run an Elastic Agent on Fleet.
