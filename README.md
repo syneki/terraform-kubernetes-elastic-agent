@@ -4,11 +4,8 @@
 <img alt="GitHub release (latest SemVer)" src="https://img.shields.io/github/v/release/syneki/terraform-kubernetes-elastic-agent">
 <img alt="GitHub contributors" src="https://img.shields.io/github/contributors/syneki/terraform-kubernetes-elastic-agent">
 <img alt="GitHub issues" src="https://img.shields.io/github/issues/syneki/terraform-kubernetes-elastic-agent">
-</p>
-<p align="center">
 <img alt="GitHub followers" src="https://img.shields.io/github/followers/syneki?style=social">
 </p>
-
 
 # Terraform Kubernetes Elastic Agent
 
