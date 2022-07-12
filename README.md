@@ -22,6 +22,8 @@ module "fleet_server" {
   name      = "fleet-server"
   namespace = "monitoring"
 
+  elastic_version = "8.2.3"
+
   fleet_server_enable             = true
   fleet_server_elasticsearch_host = "https://elasticsearch:9200"
   fleet_server_service_token      = "my-service-token"
@@ -38,6 +40,8 @@ module "fleet_elastic_agent" {
 
   name      = "fleet-server"
   namespace = "monitoring"
+
+  elastic_version = "8.2.3"
 
   fleet_enroll           = true
   fleet_url              = "https://fleet.syneki.com"
@@ -56,7 +60,7 @@ module "fleet_elastic_agent" {
 
 | Name | Version |
 |------|---------|
-| <a name="provider_kubernetes"></a> [kubernetes](#provider\_kubernetes) | 2.11.0 |
+| <a name="provider_kubernetes"></a> [kubernetes](#provider\_kubernetes) | 2.12.1 |
 
 ## Modules
 
@@ -75,6 +79,7 @@ module "fleet_elastic_agent" {
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
+| <a name="input_elastic_version"></a> [elastic\_version](#input\_elastic\_version) | The elastic agent version | `string` | n/a | yes |
 | <a name="input_elasticsearch_ca"></a> [elasticsearch\_ca](#input\_elasticsearch\_ca) | The path to a certificate authority. | `string` | `null` | no |
 | <a name="input_elasticsearch_host"></a> [elasticsearch\_host](#input\_elasticsearch\_host) | The Elasticsearch host to communicate with | `string` | `"http://elasticsearch:9200"` | no |
 | <a name="input_elasticsearch_password"></a> [elasticsearch\_password](#input\_elasticsearch\_password) | The basic authentication password used to connect to Kibana and retrieve a service\_token for Fleet. | `string` | `"changeme"` | no |
