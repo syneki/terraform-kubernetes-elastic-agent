@@ -15,6 +15,11 @@ variable "labels" {
   description = "Labels append to resources created"
 }
 
+variable "elastic_version" {
+  type        = string
+  description = "The elastic agent version"
+}
+
 # ELASTICSEARCH CONFIGURATION
 
 variable "elasticsearch_host" {

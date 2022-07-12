@@ -122,7 +122,7 @@ resource "kubernetes_daemonset" "elastic_agent" {
 
         container {
           name  = var.name
-          image = "docker.elastic.co/beats/elastic-agent:8.2.2"
+          image = "docker.elastic.co/beats/elastic-agent:${var.elastic_version}"
 
           env {
             name  = "ELASTICSEARCH_HOST"
