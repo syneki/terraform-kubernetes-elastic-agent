@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.1.0](https://github.com/syneki/terraform-kubernetes-elastic-agent/compare/v1.0.1...v1.1.0) (2022-07-12)
+
+
+### Features
+
+* add version variable ([c2b9637](https://github.com/syneki/terraform-kubernetes-elastic-agent/commit/c2b96371992ca8f72a93b1a54e6c3b19fcaaf86c))
+
+
+### Bug Fixes
+
+* Update kubernetes provider version ([1c2eaa1](https://github.com/syneki/terraform-kubernetes-elastic-agent/commit/1c2eaa14901fd0d8f4c0a51f03266568532e3c59))
+
 ### [1.0.1](https://github.com/syneki/terraform-kubernetes-elastic-agent/compare/v1.0.0...v1.0.1) (2022-06-18)
 
 
