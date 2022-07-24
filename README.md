@@ -73,12 +73,14 @@ module "fleet_elastic_agent" {
 | Name | Type |
 |------|------|
 | [kubernetes_daemonset.elastic_agent](https://registry.terraform.io/providers/hashicorp/kubernetes/latest/docs/resources/daemonset) | resource |
+| [kubernetes_deployment.elastic_agent](https://registry.terraform.io/providers/hashicorp/kubernetes/latest/docs/resources/deployment) | resource |
 | [kubernetes_secret.elastic_agent](https://registry.terraform.io/providers/hashicorp/kubernetes/latest/docs/resources/secret) | resource |
 
 ## Inputs
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
+| <a name="input_deployment"></a> [deployment](#input\_deployment) | Creates a Deployment or a DaemonSet | `bool` | `false` | no |
 | <a name="input_elastic_version"></a> [elastic\_version](#input\_elastic\_version) | The elastic agent version | `string` | n/a | yes |
 | <a name="input_elasticsearch_ca"></a> [elasticsearch\_ca](#input\_elasticsearch\_ca) | The path to a certificate authority. | `string` | `null` | no |
 | <a name="input_elasticsearch_host"></a> [elasticsearch\_host](#input\_elasticsearch\_host) | The Elasticsearch host to communicate with | `string` | `"http://elasticsearch:9200"` | no |

@@ -20,6 +20,12 @@ variable "elastic_version" {
   description = "The elastic agent version"
 }
 
+variable "deployment" {
+  type        = bool
+  default     = false
+  description = "Creates a Deployment or a DaemonSet"
+}
+
 # ELASTICSEARCH CONFIGURATION
 
 variable "elasticsearch_host" {
