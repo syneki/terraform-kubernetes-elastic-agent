@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+### [1.2.1](https://github.com/syneki/terraform-kubernetes-elastic-agent/compare/v1.2.0...v1.2.1) (2022-08-04)
+
+
+### Bug Fixes
+
+* fix deployment ([476ff2c](https://github.com/syneki/terraform-kubernetes-elastic-agent/commit/476ff2c3fd6948fa1e5042e5f8f01d04655c4423))
+
 ## [1.2.0](https://github.com/syneki/terraform-kubernetes-elastic-agent/compare/v1.1.0...v1.2.0) (2022-07-24)
 
 
