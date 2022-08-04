@@ -12,7 +12,7 @@ module "rbac" {
     rules = [
       {
         api_groups = [""]
-        resources  = ["nodes", "namespaces", "events", "pods", "services", "configmaps", "serviceaccounts", "peristentvolumes", "persistentvolumeclaims"]
+        resources  = ["nodes", "namespaces", "events", "pods", "services", "configmaps", "serviceaccounts", "persistentvolumes", "persistentvolumeclaims"]
         verbs      = ["get", "list", "watch"]
       },
       {

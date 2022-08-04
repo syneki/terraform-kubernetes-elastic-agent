@@ -26,9 +26,6 @@ resource "kubernetes_deployment" "elastic_agent" {
 
       spec {
         service_account_name = module.rbac.service_account
-        host_pid             = true
-        dns_policy           = "ClusterFirstWithHostNet"
-        host_network         = true
 
         container {
           name  = var.name
@@ -364,6 +361,12 @@ resource "kubernetes_deployment" "elastic_agent" {
               name       = "fleet-certificate"
               mount_path = "/certs/fleet"
             }
+          }
+
+          port {
+            name           = "apm"
+            protocol       = "TCP"
+            container_port = 8200
           }
         }
 
